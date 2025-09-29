@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple article preview component with share functionality.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Frontend Mentor, Article Preview Component">
+    <meta name="author" content="Asmaa GAD">
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500..700&display=swap"
+    rel="stylesheet">
+    <link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="resources/css/index.css">
+</head>
+<body>
+    <main>
+        <div class="content-container" role="presentation">
+        <div class="img-container">
+            <img src="resources/images/drawers.jpg"
+            alt="green drawer with two pictures and plant in a vase"
+            width="330"
+            height="264"
+             >
+        </div>
+        <section class="text-container">
+            <div class="content-sec">
+                <h2>Shift the overall look and feel by adding these wonderful 
+                touches to furniture in your home</h2>
+               <p>Ever been in a room and felt like something was missing? Perhaps 
+                it felt slightly bare and uninviting. I've got some simple tips 
+                to help you make any room feel complete.</p>
+            </div>
+                <div class="btn-container" id="default-state">
+            <div class="profile-sec">
+                    <img src="resources/images/avatar-michelle.jpg"
+                    alt="picture of Michelle"
+                    width="175"
+                    height="175"
+                    class="profile-pic">
+            <div class="personal-info">
+                    <h3>Michelle Appleton</h3>
+                    <span><time datetime="2020-06-28">28 Jun 2020</time></span>
+                </div>
+                </div>
+                    <button type="button" id="btn-share" class="share-btn">
+                    <img src="resources/images/icon-share.svg"
+                    alt="share icon"
+                    width="15"
+                    height="13">
+                    </button>
+              </div>     
+        </section>
+        <section class="share-links desktop-design" id="active-state">
+                 <div class="links-container">
+                    <h4>SHARE</h4>
+                    <div class="social-media">
+                   <a href="https://www.facebook.com/" 
+                   target="_blank" 
+                   rel="noopener">
+                   <img src="resources/images/icon-facebook.svg"
+                    alt="icon-facebook"
+                    width="20"
+                    height="20"
+                    class="icon-facebook"></a>
+                   <a href="https://x.com/" 
+                   target="_blank"
+                   rel="noopener">
+                   <img src="resources/images/icon-twitter.svg"
+                    alt="icon-twitter"
+                    width="20"
+                    height="17"
+                    class="icon-twitter"></a>
+                    <a href="https://www.pinterest.com/"
+                    target="_blank"
+                    rel="noopener">
+                    <img src="resources/images/icon-pinterest.svg"
+                    alt="icon-pinterest"
+                    width="20"
+                    height="20"
+                    class="icon-pinterest"></a>
+                </div>
+                <button type="button" class="btn-active" id="btn-active">
+                    <img src="resources/images/icon-share.svg"
+                    alt="share icon"
+                    width="15"
+                    height="13">
+                </button>
+                </div>
+        </section>
+        </div>
+    </main> 
+    <footer>
+        <small>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" 
+            target="_blank"
+            rel="noopener">Frontend Mentor</a>. 
+            Coded by <a href="https://x.com/Asmaagadel" 
+            target="_blank"
+            rel="no">Asmaa GAD</a>.</small>
+    </footer>
+    <script src="resources/js/index.js"></script>
+</body>
+</html>

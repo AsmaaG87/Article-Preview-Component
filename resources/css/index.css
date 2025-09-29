@@ -1,0 +1,319 @@
+
+  /* Global Style */
+  * {
+    box-sizing: border-box;
+  }
+
+ html, body {
+    font-family: "Manrope", sans-serif;
+    background-color: #ECF2F8;
+    margin: 0;
+    padding: 0;
+ }
+
+  /* Container style */
+  .content-container {
+    width: 375px;
+    display: grid;
+    gap: 32px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+     "img"
+     "text";
+     
+     
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  .img-container{
+   grid-area: img;
+  }
+  .img-container img {
+   object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+  }
+    /* Text Section Style */
+  .text-container{
+    grid-area: text;
+    width: 276px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px; 
+    padding-bottom: 2em;
+    padding-top: 2em;
+    margin: 0 auto;
+
+  }
+  .content-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .text-container h2 {
+    font-size: 1.125rem;
+    line-height: 26px;
+    letter-spacing: 0.015625em;
+    text-align: left;
+    color: #48556A;
+    font-weight: 900;  
+    margin: 0;
+  }
+  .text-container p {
+    font-size: 0.8125rem;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-align: left;
+    color: #6E8098;
+    font-weight: 500;
+    margin: 0;
+  } 
+
+  /* Button Section Style */
+   
+  .btn-container {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile-sec {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-left: auto;
+  }
+  .btn-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    width: 114px;
+    gap: 4px;
+    
+  }
+  .btn-container h3 {
+    font-size: 0.8125rem;
+    text-align: left;
+    color: #48556A;
+    font-weight: 900;
+    margin: 0;
+  }
+  .btn-container span {
+     font-size: 0.8125rem;
+    text-align: left;
+    color: #48556A;
+    font-weight: 900;
+  }
+  .btn-container button {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #ECF2F8;
+    margin-left: 1.875em;
+    margin-right: auto;
+  
+  }
+  .btn-container button img {
+    width: 15px;
+    height: 13px;
+    object-fit: contain;
+  }
+   /* Active State Style */
+
+  .share-links {
+    display: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #48556A;
+    border-radius: 6px;
+    padding: 1em 2em;
+    width: 100%;
+
+  }
+  .links-container {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+  }
+  .share-links h4 {
+    font-size: 0.8125rem;
+    letter-spacing: 0.12em;
+    line-height: 18px;
+    text-align: left;
+    color: #9DAEC2;
+    font-weight: 400;
+  }
+  .social-media {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .social-media a img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  .btn-active {
+    width: 32px;
+    height: 32px;
+    background-color: #6E8098;
+    border: none;
+    border-radius: 50%;  
+  }
+  .btn-active img {
+    filter: brightness(4) ;
+  } 
+  footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6E8098;
+    margin: 0 auto;
+    padding: 3em 0;
+  }
+  footer a {
+    color: #48556A;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  footer a:hover,
+  footer a:focus {
+    text-decoration: underline; 
+  }
+
+  /* Media Query */
+  @media only screen and (min-width: 480px) {
+    .content-container {
+     width: 680px;
+     display: grid;
+     gap: 32px;
+     margin: 8em auto;
+     grid-template-columns: repeat(9, 1fr);
+     grid-template-rows: 1fr;
+     grid-template-areas:
+      "img img img img text text text text text";   
+      border-radius: 10px;
+      position: relative;
+    }
+   
+    .img-container img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;  
+    }
+    .text-container {
+     width: 311px;
+      gap: 24px;
+      margin: 0;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      justify-content: center;
+    }
+    .btn-container {
+      width: 311px;
+      height: 40px;
+      display: flex;
+      gap: 104px;
+      align-items: center;
+    }
+    .personal-info {
+      gap: 0;
+    }
+    .personal-info span {
+       color: #9DAEC2
+    }
+    .btn-container button {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 10px;
+    }
+    .btn-container button:hover,
+    .btn-container button:focus {
+      background-color: #6E8098;
+    }
+    .btn-container button:hover img,
+    .btn-container button:focus img {
+      filter: brightness(4);
+    }
+    .desktop-design {
+      display: none;
+      gap: 16px;
+      width: 280px;
+      height: 60px;
+      align-items: center;
+      padding: 1em 2em;
+      position: absolute;
+      bottom: 6em;
+      right: -4.5em;  
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+     .desktop-design::before, 
+     .desktop-design::after {
+        content: "";
+        position: absolute;
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #48556A;
+        bottom: -10px;
+        right: 50%;
+        left: 50%;
+
+      }
+     
+    .social-media {
+      max-width: 171px;
+      max-height: 20px;
+      gap: 24px;
+      text-align: center;
+      margin: 0 auto;  
+    }
+    .btn-active {
+      display: none;
+    }
+    
+  }
+   /* Desktop View */
+
+  @media only screen and (min-width: 810px) {
+    .content-container {
+      width : 768px;
+      gap: 40px;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-areas: 
+      "img img img img text text text text text";
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .text-container {
+      width: 365px;
+      gap: 24px;
+      margin: 0;
+    }
+    .btn-container {
+      width: 365px;
+      gap: 160px;
+    }
+    .btn-container button {
+      margin-top: 10px;
+    }
+  }
